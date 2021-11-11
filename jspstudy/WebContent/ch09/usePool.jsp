@@ -25,10 +25,14 @@
 		ResultSet rs= null;
 		
 		try{
-			Context initCtx = new InitialContext();
-			Context envCtx = (Context) initCtx.lookup("java:comp/env");
-			DataSource ds = (DataSource)envCtx.lookup("jdbc/study");
-			conn = ds.getConnection();
+			
+			String url = "jdbc:mysql://127.0.0.1:3306/study?serverTimezone=UTC&amp;useSSL=false";
+			String ids = "root";
+			String pw = "rlaehgus12!";
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			conn = DriverManager.getConnection(url,ids,pw);
 			
 			
 			String sql = "select * from member";

@@ -20,3 +20,8 @@ insert into member values('kingdora@aaa.com','1234', '김도현', now(), '경기도', 
 delete from member;
 
 select * from member;
+
+alter table member modify passwd varchar(60) not null;
+
+desc member;
+
