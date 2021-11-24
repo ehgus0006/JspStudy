@@ -13,6 +13,7 @@ import work.crypt.SHA256;
 
 public class LogonDBBean {
 
+	
 	private static LogonDBBean instance = new LogonDBBean();
 	
 	public static LogonDBBean getInstance() {

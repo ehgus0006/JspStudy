@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../css/style.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
-<script src="https://malsup.github.io/jquery.form.js"></script> 
+<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery.form.min.js"></script>
 <script src="../js/singleupload.js"></script>
 <title>Insert title here</title>
 </head>
